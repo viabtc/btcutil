@@ -2,7 +2,7 @@
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
-package btcutil
+package dogeutil
 
 import (
 	"bytes"
@@ -11,10 +11,10 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/btcsuite/btcd/btcec"
-	"github.com/btcsuite/btcd/chaincfg"
-	"github.com/btcsuite/btcutil/base58"
-	"github.com/btcsuite/btcutil/bech32"
+	"github.com/viabtc/doged/btcec"
+	"github.com/viabtc/doged/chaincfg"
+	"github.com/viabtc/dogeutil/base58"
+	"github.com/viabtc/dogeutil/bech32"
 	"golang.org/x/crypto/ripemd160"
 )
 

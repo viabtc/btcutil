@@ -9,13 +9,13 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"github.com/btcsuite/btcd/chaincfg"
-	"github.com/btcsuite/btcd/chaincfg/chainhash"
-	"github.com/btcsuite/btcd/txscript"
-	"github.com/btcsuite/btcd/wire"
-	"github.com/btcsuite/btcutil"
-	"github.com/btcsuite/btcutil/gcs"
-	"github.com/btcsuite/btcutil/gcs/builder"
+	"github.com/viabtc/doged/chaincfg"
+	"github.com/viabtc/doged/chaincfg/chainhash"
+	"github.com/viabtc/doged/txscript"
+	"github.com/viabtc/doged/wire"
+	"github.com/viabtc/dogeutil"
+	"github.com/viabtc/dogeutil/gcs"
+	"github.com/viabtc/dogeutil/gcs/builder"
 )
 
 var (
@@ -79,8 +79,8 @@ func TestUseBlockHash(t *testing.T) {
 		Index: 4321,
 	}
 
-	// btcutil.Address
-	addr, err := btcutil.DecodeAddress(testAddr, &chaincfg.MainNetParams)
+	// dogeutil.Address
+	addr, err := dogeutil.DecodeAddress(testAddr, &chaincfg.MainNetParams)
 	if err != nil {
 		t.Fatalf("Address decode failed: %s", err.Error())
 	}

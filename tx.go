@@ -2,14 +2,14 @@
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
-package btcutil
+package dogeutil
 
 import (
 	"bytes"
 	"io"
 
-	"github.com/btcsuite/btcd/chaincfg/chainhash"
-	"github.com/btcsuite/btcd/wire"
+	"github.com/viabtc/doged/chaincfg/chainhash"
+	"github.com/viabtc/doged/wire"
 )
 
 // TxIndexUnknown is the value returned for a transaction index that is unknown.

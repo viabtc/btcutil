@@ -2,13 +2,13 @@
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
-package btcutil_test
+package dogeutil_test
 
 import (
 	"math"
 	"testing"
 
-	. "github.com/btcsuite/btcutil"
+	. "github.com/viabtc/dogeutil"
 )
 
 func TestAmountCreation(t *testing.T) {
